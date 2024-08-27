@@ -8,11 +8,9 @@ shortenBtn.addEventListener('click', shortenLink);
 async function shortenLink(e) {
     e.preventDefault();
 
-    /* const response = await fetch(`https://cleanuri.com/api/v1/shorten`, {
-        method: 'POST'
-    });
+    const response = await fetch(`https://cleanuri.com/api/v1/shorten:splat 200`);
     const jsonDataCameFromResponse = await response.json();
-    console.log(jsonDataCameFromResponse); */
+    console.log(jsonDataCameFromResponse);
     outputContainer.innerHTML += `
     <div class="output">
         <span class="output-left" id="linkEnteredText">https://www.frontendmentor.io</span>
@@ -23,7 +21,3 @@ async function shortenLink(e) {
     </div>
     `;
 };
-
-fetch('https://cleanuri.com/api/v1/shorten/result_url', {
-    method: 'POST'})
-    .then(response => console.log(response))
