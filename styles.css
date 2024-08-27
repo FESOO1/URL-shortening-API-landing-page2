@@ -690,6 +690,9 @@ footer {
     .advanced-statistics-text > p > br {
         display: none;
     }
+    .boost-your-links-today > h2 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 600px) {
