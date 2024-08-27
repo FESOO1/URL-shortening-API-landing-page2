@@ -99,7 +99,7 @@ nav {
 /* MENU */
 
 .menu {
-    display: flex;
+    display: none;
 }
 
 .menu-itself {
@@ -132,21 +132,13 @@ nav {
     transform: translateY(3px);
 }
 
-.menu-btn-js > .menu-itself > .menu-itself-top {
-    transform: translateY(0) rotateZ(40deg);
-}
-
-.menu-btn-js > .menu-itself > .menu-itself-bottom {
-    transform: translateY(0) rotateZ(-40deg);
-}
-
 .menu-pop-up {
     position: fixed;
-    width: 95%;
-    left: calc(50% - 47.5%);
+    width: 98%;
+    left: calc(50% - 49%);
     top: 80px;
     background-color: hsl(257, 27%, 26%);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     padding: 20px;
@@ -154,9 +146,12 @@ nav {
     row-gap: 10px;
 }
 
+.menu-pop-up > a {
+    text-decoration: none;
+}
+
 .menu-pop-up-link {
     color: white;
-    text-decoration: none;
     font-weight: 500;
 }
 
@@ -165,6 +160,37 @@ nav {
     border: 0;
     border-top: 1px solid hsl(257, 27%, 26%);
     border-bottom: 1px solid hsl(260, 7%, 45%);
+}
+
+.pop-up-login-btn {
+    color: white;
+    font-weight: 500;
+}
+
+.pop-up-sign-up-btn {
+    width: 100%;
+    height: 40px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 2rem;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.menu-btn-js > .menu-itself > .menu-itself-top {
+    transform: translateY(0) rotateZ(40deg);
+}
+
+.menu-btn-js > .menu-itself > .menu-itself-bottom {
+    transform: translateY(0) rotateZ(-40deg);
+}
+
+.menu-btn-js > .menu-pop-up {
+    display: flex;
 }
 
 /* MAIN */
