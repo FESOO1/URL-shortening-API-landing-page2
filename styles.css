@@ -627,11 +627,12 @@ footer {
 
 @media (max-width: 890px) {
     .output {
+        padding: 0 20px;
         flex-direction: column;
     }
     .output-left {
         width: 100%;
-        padding-block: 10px;
+        padding-block: 16px;
         border-bottom: 1px solid hsl(260, 7%, 45%);
     }
     .output-right {
@@ -712,7 +713,7 @@ footer {
         font-size: 2rem;
     }
     .advanced-statistics {
-        padding: 30px 170px;
+        padding-block: 50px 170px;
     }
 }
 
@@ -749,6 +750,14 @@ footer {
         font-size: 1.8rem;
         padding-inline: var(--padding-inline);
         text-align: center;
+    }
+    .output-right {
+        flex-direction: column;
+        row-gap: 10px;
+        padding-block: 20px;
+    }
+    .copy-button {
+        width: 100%;
     }
 }
 
