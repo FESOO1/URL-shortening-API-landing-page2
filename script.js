@@ -7,10 +7,9 @@ shortenBtn.addEventListener('click', shortenLink);
 
 async function shortenLink(e) {
     e.preventDefault();
-
-    const response = await fetch(`https://cleanuri.com/api/v1/shorten:splat 200`);
+    /* const response = await fetch(`https://cleanuri.com/api/v1/shorten:splat 200`);
     const jsonDataCameFromResponse = await response.json();
-    console.log(jsonDataCameFromResponse);
+    console.log(jsonDataCameFromResponse); */
     outputContainer.innerHTML += `
     <div class="output">
         <span class="output-left" id="linkEnteredText">https://www.frontendmentor.io</span>
@@ -21,3 +20,11 @@ async function shortenLink(e) {
     </div>
     `;
 };
+
+// MENU
+
+const menuBtn = document.querySelector('.menu');
+
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('menu-btn-js');
+});

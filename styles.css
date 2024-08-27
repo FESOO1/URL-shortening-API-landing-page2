@@ -96,6 +96,77 @@ nav {
     background-color: hsl(180, 62%, 43%);
 }
 
+/* MENU */
+
+.menu {
+    display: flex;
+}
+
+.menu-itself {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-itself * {
+    position: absolute;
+}
+
+.menu-itself-top,
+.menu-itself-bottom {
+    width: 100%;
+    height: 3px;
+    background-color: hsl(260, 8%, 14%);
+    transition: transform 300ms;
+}
+
+.menu-itself-top {
+    transform: translateY(-3px);
+}
+
+.menu-itself-bottom {
+    transform: translateY(3px);
+}
+
+.menu-btn-js > .menu-itself > .menu-itself-top {
+    transform: translateY(0) rotateZ(40deg);
+}
+
+.menu-btn-js > .menu-itself > .menu-itself-bottom {
+    transform: translateY(0) rotateZ(-40deg);
+}
+
+.menu-pop-up {
+    position: fixed;
+    width: 95%;
+    left: calc(50% - 47.5%);
+    top: 80px;
+    background-color: hsl(257, 27%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 1rem;
+    row-gap: 10px;
+}
+
+.menu-pop-up-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu-pop-up > hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid hsl(257, 27%, 26%);
+    border-bottom: 1px solid hsl(260, 7%, 45%);
+}
+
 /* MAIN */
 
 main {
