@@ -759,10 +759,19 @@ footer {
     .copy-button {
         width: 100%;
     }
+    .output-left {
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 400px) {
     :root {
         --padding-inline: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .input-inner {
+        padding: 20px;
     }
 }
